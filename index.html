@@ -8,95 +8,135 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      color: #000;
+      background-color: #fdf6ef;
+      color: #333;
     }
     header {
-      background: linear-gradient(to right, #e5109c, #DFCDF9);
-      color: white;
-      padding: 2rem;
+      background-color: #fff;
       text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .brand-name {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #e5109c;
+      display: inline-block;
+      animation: floatSide 3s ease-in-out infinite alternate;
+    }
+    @keyframes floatSide {
+      from { transform: translateX(-10px); }
+      to { transform: translateX(10px); }
     }
     nav {
+      margin-top: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
       flex-wrap: wrap;
-      margin: 1rem 0;
     }
     nav a {
-      color: white;
+      color: #e5109c;
       font-weight: bold;
       text-decoration: none;
     }
+
     section {
-      padding: 2rem;
-      max-width: 900px;
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
       margin: auto;
     }
     h2 {
       color: #e5109c;
-      margin-top: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
     }
-    .collection {
+    .services {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: space-around;
+      justify-content: space-between;
+      gap: 1.5rem;
     }
-    .item {
-      width: 250px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
+    .service-card {
+      background-color: #fff;
+      border-radius: 12px;
+      flex: 1 1 calc(33.333% - 1rem);
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .item img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-    .item h3 {
-      background-color: #DFCDF9;
-      margin: 0;
-      padding: 1rem;
+    .service-card h3 {
+      margin-top: 0;
+      color: #333;
     }
     .price {
-      color: #e5109c;
+      background-color: #e5109c;
+      color: white;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
       font-weight: bold;
+      margin-top: 1rem;
     }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
+
     input, textarea, select {
-      padding: 0.75rem;
+      padding: 0.8rem;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 1rem;
+      background-color: #fefefe;
     }
+
     button {
-      padding: 0.75rem;
       background-color: #e5109c;
-      color: #fff;
+      color: white;
       border: none;
+      padding: 0.8rem;
       font-weight: bold;
+      border-radius: 5px;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
+
+    button:hover {
+      background-color: #c90c83;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
-      background: #000;
-      color: #fff;
+      background: #fff;
+      color: #999;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .services {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Espinoza Chic</h1>
-    <p>We help women express their style through fashion that reflects their true personality.</p>
+    <div class="brand-name">Espinoza Chic</div>
+    <p style="margin-top: 1rem;">We help women express their style through fashion that reflects their true personality.</p>
     <nav>
       <a href="#">Home</a>
       <a href="https://instagram.com" target="_blank">Instagram</a>
@@ -106,19 +146,28 @@
   </header>
 
   <section>
-    <h2>Style Personality Services</h2>
-
-    <div class="service">
-      <p><strong>✨ Discover Your Style Session</strong> – Learn what clothing fits your personality and lifestyle.<br><span class="price">$150 per session</span></p>
-      <p><strong>👗 Personalized Wardrobe Plan</strong> – I help you select outfits and provide a basic color palette to dress confidently each week.<br><span class="price">$200</span></p>
-      <p><strong>🧵 Clothing Fix Assistance</strong> – Fix or adjust clothes that are too big or don’t fit your shape perfectly.<br><span class="price">Included with wardrobe plan</span></p>
-      <p><strong>📸 Photoshoot Styling</strong> – Style selection for a professional photoshoot or special event.<br><span class="price">$100 (occasion-based)</span></p>
+    <h2>Our Styling Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>✨ Discover Your Style</h3>
+        <p>Learn what clothing fits your personality and lifestyle with a personalized session.</p>
+        <span class="price">$150</span>
+      </div>
+      <div class="service-card">
+        <h3>👗 Wardrobe & Color Plan</h3>
+        <p>I help you select outfits and give you a basic color palette for your weekly wear. Includes clothing fit assistance.</p>
+        <span class="price">$200</span>
+      </div>
+      <div class="service-card">
+        <h3>📸 Photoshoot Styling</h3>
+        <p>Outfit planning and guidance for a professional photoshoot or special event — styled to fit the occasion.</p>
+        <span class="price">$100</span>
+      </div>
     </div>
   </section>
 
   <section>
-    <h2>Ready to Elevate Your Style?</h2>
-    <p>Tell me a bit about your fashion goals or challenges. I’ll get back to you with a custom styling guide or booking info.</p>
+    <h2>Let’s Connect</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Email" required />
@@ -134,7 +183,7 @@
   </section>
 
   <footer>
-    ✨ Espinoza Chic — Fashion for Your Soul ✨ <br/>
+    ✨ Espinoza Chic — Fashion for Your Soul ✨<br/>
     &copy; 2025 Lourdes Espinoza
   </footer>
 
