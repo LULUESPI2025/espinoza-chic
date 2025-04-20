@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Espinoza Chic | Style by Personality</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+    header {
+      background: linear-gradient(to right, #e5109c, #DFCDF9);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #e5109c;
+      margin-top: 2rem;
+    }
+    .collection {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-around;
+    }
+    .item {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .item h3 {
+      background-color: #DFCDF9;
+      margin: 0;
+      padding: 1rem;
+    }
+    .price {
+      color: #e5109c;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, select {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem;
+      background-color: #e5109c;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Espinoza Chic</h1>
+    <p>We help women express their style through fashion that reflects their true personality.</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://tiktok.com" target="_blank">TikTok</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Style Personality Services</h2>
+
+    <div class="service">
+      <p><strong>✨ Discover Your Style Session</strong> – Learn what clothing fits your personality and lifestyle.<br><span class="price">$150 per session</span></p>
+      <p><strong>👗 Personalized Wardrobe Plan</strong> – I help you select outfits and provide a basic color palette to dress confidently each week.<br><span class="price">$200</span></p>
+      <p><strong>🧵 Clothing Fix Assistance</strong> – Fix or adjust clothes that are too big or don’t fit your shape perfectly.<br><span class="price">Included with wardrobe plan</span></p>
+      <p><strong>📸 Photoshoot Styling</strong> – Style selection for a professional photoshoot or special event.<br><span class="price">$100 (occasion-based)</span></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ready to Elevate Your Style?</h2>
+    <p>Tell me a bit about your fashion goals or challenges. I’ll get back to you with a custom styling guide or booking info.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <select name="service">
+        <option value="">Select a Service</option>
+        <option value="Discover Your Style">Discover Your Style</option>
+        <option value="Wardrobe Plan + Fixes">Wardrobe Plan + Fixes</option>
+        <option value="Photoshoot Styling">Photoshoot Styling</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your style or what you need help with!" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    ✨ Espinoza Chic — Fashion for Your Soul ✨ <br/>
+    &copy; 2025 Lourdes Espinoza
+  </footer>
+
+</body>
+</html>
