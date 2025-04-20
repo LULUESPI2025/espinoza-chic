@@ -1,3 +1,4 @@
+/* Global styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #333;
 }
 
+/* Header with brand styling */
 header {
   background-color: #fff;
   text-align: center;
@@ -12,6 +14,7 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Brand name animation */
 .brand-name {
   font-size: 2.5rem;
   font-weight: bold;
@@ -20,11 +23,13 @@ header {
   animation: floatSide 3s ease-in-out infinite alternate;
 }
 
+/* Keyframes for floating animation */
 @keyframes floatSide {
   from { transform: translateX(-10px); }
   to { transform: translateX(10px); }
 }
 
+/* Navigation styling */
 nav {
   margin-top: 1rem;
   display: flex;
@@ -39,6 +44,7 @@ nav a {
   text-decoration: none;
 }
 
+/* Main sections styling */
 section {
   padding: 3rem 1.5rem;
   max-width: 1100px;
@@ -51,6 +57,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* Service cards layout */
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +65,7 @@ h2 {
   gap: 1.5rem;
 }
 
+/* Individual service card */
 .service-card {
   background-color: #fff;
   border-radius: 12px;
@@ -74,6 +82,7 @@ h2 {
   color: #333;
 }
 
+/* Price label */
 .price {
   background-color: #e5109c;
   color: white;
@@ -84,6 +93,7 @@ h2 {
   margin-top: 1rem;
 }
 
+/* Contact form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -96,6 +106,7 @@ form {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+/* Input fields and textarea */
 input, textarea, select {
   padding: 0.8rem;
   border: 1px solid #ccc;
@@ -104,6 +115,7 @@ input, textarea, select {
   background-color: #fefefe;
 }
 
+/* Button styling */
 button {
   background-color: #e5109c;
   color: white;
@@ -115,10 +127,12 @@ button {
   transition: background 0.3s ease;
 }
 
+/* Hover effect on button */
 button:hover {
   background-color: #c90c83;
 }
 
+/* Footer styling */
 footer {
   text-align: center;
   padding: 2rem;
@@ -128,6 +142,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Responsive layout for mobile screens */
 @media (max-width: 900px) {
   .services {
     flex-direction: column;
