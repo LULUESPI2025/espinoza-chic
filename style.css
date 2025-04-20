@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6ef;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e5109c;
+  display: inline-block;
+  animation: floatSide 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatSide {
+  from { transform: translateX(-10px); }
+  to { transform: translateX(10px); }
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #e5109c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  color: #e5109c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 12px;
+  flex: 1 1 calc(33.333% - 1rem);
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.price {
+  background-color: #e5109c;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+input, textarea, select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fefefe;
+}
+
+button {
+  background-color: #e5109c;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #c90c83;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  color: #999;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+  }
+}
