@@ -1,16 +1,21 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Espinoza Chic | Style by Personality</title>
+
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Header section with brand name and navigation -->
   <header>
     <div class="brand-name">Espinoza Chic</div>
     <p style="margin-top: 1rem;">We help women express their style through fashion that reflects their true personality.</p>
+    
+    <!-- Navigation links to social media -->
     <nav>
       <a href="#">Home</a>
       <a href="https://instagram.com" target="_blank">Instagram</a>
@@ -19,43 +24,60 @@
     </nav>
   </header>
 
+  <!-- Services section -->
   <section>
     <h2>Our Styling Services</h2>
     <div class="services">
+      
+      <!-- Service 1 -->
       <div class="service-card">
         <h3>✨ Discover Your Style</h3>
         <p>Learn what clothing fits your personality and lifestyle with a personalized session.</p>
         <span class="price">$150</span>
       </div>
+
+      <!-- Service 2 -->
       <div class="service-card">
         <h3>👗 Wardrobe & Color Plan</h3>
         <p>I help you select outfits and give you a basic color palette for your weekly wear. Includes clothing fit assistance.</p>
         <span class="price">$200</span>
       </div>
+
+      <!-- Service 3 -->
       <div class="service-card">
         <h3>📸 Photoshoot Styling</h3>
         <p>Outfit planning and guidance for a professional photoshoot or special event — styled to fit the occasion.</p>
         <span class="price">$100</span>
       </div>
+
     </div>
   </section>
 
+  <!-- Contact form section -->
   <section>
     <h2>Let’s Connect</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST">
+      <!-- User input fields -->
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Email" required />
+      
+      <!-- Service selection -->
       <select name="service">
         <option value="">Select a Service</option>
         <option value="Discover Your Style">Discover Your Style</option>
         <option value="Wardrobe Plan + Fixes">Wardrobe Plan + Fixes</option>
         <option value="Photoshoot Styling">Photoshoot Styling</option>
       </select>
+
+      <!-- Message box -->
       <textarea name="message" placeholder="Tell us about your style or what you need help with!" rows="4" required></textarea>
+      
+      <!-- Submit button -->
       <button type="submit">Send</button>
     </form>
   </section>
 
+  <!-- Footer section -->
   <footer>
     ✨ Espinoza Chic — Fashion for Your Soul ✨<br/>
     &copy; 2025 Lourdes Espinoza
